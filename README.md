@@ -78,3 +78,89 @@ sudo apt-get install python3-flask python3-pip portaudio19-dev
 # Configure API keys
 cp .env.example .env
 # Edit .env file with your API keys
+Network Configuration
+For stable web interface access, consider setting up a static IP address on your Raspberry Pi.
+Usage
+Starting the System
+bash# Run the main control script
+python main.py
+
+# In a separate terminal, start the web interface
+python web_interface.py
+Voice Commands Examples
+The vehicle understands natural Turkish commands such as:
+
+"İleri git" (Go forward)
+"Sağa dön" (Turn right)
+"Sola dön" (Turn left)
+"Dur" (Stop)
+"10 santimetre ileri git" (Go forward 10 centimeters)
+
+Web Interface
+Access the monitoring dashboard at http://raspberrypi.local:5000 to view:
+
+Real-time command history
+JSON command parsing results
+System status and sensor readings
+Task execution logs
+
+Screenshots
+System Architecture
+The project follows a sophisticated flow diagram where voice input is processed through multiple stages:
+
+Voice Capture → Wireless microphone captures Turkish commands
+Speech-to-Text → Google STT converts audio to text
+AI Processing → GPT-3.5 interprets commands and generates JSON
+Command Execution → Vehicle performs movements with sensor feedback
+Voice Feedback → TTS announces completed actions
+
+Web Interface Dashboard
+The Flask-based web interface provides real-time monitoring with sections for:
+
+Active STT status indicator
+Command history log
+JSON parsing results
+Task execution timeline
+
+Note: The interface features a dark theme with green accent colors for better visibility
+Results
+The project successfully achieved all primary objectives:
+
+Voice Command Recognition: High accuracy in detecting and transcribing Turkish natural language commands
+AI-Powered Understanding: Both simple and complex sentences correctly interpreted and converted to JSON format
+Precise Movement Execution: Stable navigation with PID-controlled turning and gyroscope-assisted straight-line driving
+Real-time Feedback: Clear, synchronized Turkish voice responses for enhanced user experience
+System Stability: Reliable concurrent processing of audio, AI inference, and motor control
+
+Acknowledgements
+Team Members
+
+Ata Ölmez
+Arda Ayaş
+Cemal Atakan Bostancı
+Abdurrahman Can Karabulut
+
+Institution
+TOBB University of Economics and Technology
+Department of Electrical and Electronics Engineering
+Ankara, Turkey
+References
+
+Breazeal, C. (2003). Toward sociable robots. Robotics and Autonomous Systems, 42(3–4), 167–175.
+Mavridis, N. (2015). A review of verbal and non-verbal human–robot interactive communication. Robotics and Autonomous Systems, 63, 22–35.
+Dexter Industries. Alexabot: Amazon Alexa controlled robot with Raspberry Pi. Hackster.io
+
+Technical Resources
+
+Waveshare UPS HAT Documentation - Power management system setup
+SpeechBrain Speaker Recognition Model - Advanced speech processing reference
+Raspberry Pi Static IP Configuration - Network setup guide
+
+Special Thanks
+
+Course Instructor for ELE495 Capstone Design Project
+TOBB ETÜ for providing resources and facilities
+Open-source community for various libraries and tools used
+
+
+This project was completed as part of the ELE495 Capstone Design Course at TOBB University of Economics and Technology
