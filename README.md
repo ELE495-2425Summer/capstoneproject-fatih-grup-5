@@ -1,4 +1,4 @@
-# TOBB ETÜ ELE495 - Capstone Project: Voice-Controlled Autonomous Mini Vehicle
+# Natural Language Controlled Autonomous Mini Vehicle
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -9,64 +9,72 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-This project aims to build a system that can understand Turkish natural language voice commands and translate them into basic movement instructions to control a mini autonomous vehicle. It integrates embedded systems, speech recognition, natural language processing, and motor control. The system captures voice input via a microphone, interprets the command using a language model, and executes the movement with sensor assistance. It also provides spoken feedback to the user in Turkish.
+
+This capstone project (ELE495) presents an autonomous mini vehicle that can understand and execute Turkish natural language voice commands. The system integrates cutting-edge AI technologies with robotics to create an intelligent vehicle capable of interpreting conversational commands and translating them into precise movements. By combining Speech-to-Text, Large Language Models, and Text-to-Speech technologies with sensor-based navigation, the project demonstrates a multidisciplinary approach to human-robot interaction.
+
+The vehicle processes voice commands through a sophisticated pipeline: capturing audio, converting speech to text, understanding intent using AI, executing movements safely with sensor feedback, and providing voice confirmations—all in real-time.
 
 ## Features
 
-### Hardware
-The following hardware components were used:
-- [Raspberry Pi 4 Model B (4GB)](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
-- [L298N Motor Driver](https://www.amazon.com/L298N-Controller-Stepper-Raspberry-Arduino/dp/B083NSB7CH)
-- [HC-SR04 Ultrasonic Distance Sensor](https://www.sparkfun.com/products/15569)
-- [MPU6050 Gyroscope and Accelerometer](https://www.sparkfun.com/products/11028)
-- [USB Microphone](https://www.amazon.com/Plug-Play-Microphone-Compatible-Computer/dp/B08B1V3YQV)
-- [Mini 3.5mm Speaker](https://www.amazon.com/s?k=mini+3.5mm+speaker)
-- [Mini DC Motor Set with Wheels](https://www.robotistan.com/2li-dc-motor-ve-teker-seti)
+### Hardware Components
+- **[Raspberry Pi 5 4GB](https://www.raspberrypi.com/products/raspberry-pi-5/)** - Main control unit running Python
+- **Torima K9 Wireless Microphone** - Turkish voice command detection
+- **[JBL GO Bluetooth Speaker](https://www.jbl.com/portable-speakers/)** - Voice feedback system
+- **[HC-SR04 Ultrasonic Sensor](https://www.sparkfun.com/products/15569)** - Obstacle detection and distance measurement
+- **[MPU6050 6-Axis Gyro & Accelerometer](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)** - Orientation sensing with PID-controlled turning
+- **[L298N Motor Driver](https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf)** - Bidirectional motor control
+- **DC Motors and Chassis** - Vehicle mobility system
+- **[UPS HAT with 2x 18650 Batteries](https://www.waveshare.com/wiki/UPS_HAT)** - Uninterrupted power supply
 
-### Operating System and Packages
-- **OS**: Raspberry Pi OS (Bookworm)
-- **Python Version**: 3.11+
-- **Python Packages**:
-  - `speechbrain`
-  - `resemblyzer`
-  - `speechrecognition`
-  - `sounddevice`
-  - `soundfile`
-  - `Flask`
-  - `openai`
-  - `numpy`, `scipy`, `requests`
+### Software & Services
+- **Operating System**: Raspberry Pi OS
+- **Programming Language**: Python
+- **Web Framework**: Flask for real-time monitoring interface
+- **AI/ML Services**:
+  - [OpenAI GPT-3.5 Turbo](https://platform.openai.com/docs/models/gpt-3-5) - Natural language understanding and JSON command generation
+  - [Google Speech-to-Text](https://cloud.google.com/speech-to-text) - Voice to text conversion
+  - [ElevenLabs Text-to-Speech](https://elevenlabs.io/) - Turkish voice synthesis for feedback
+- **Control Algorithms**: PID control for stable navigation
 
-### Applications
-- **Speaker Verification**: Authorize the user based on their voice profile
-- **Natural Language Understanding**: Process commands via GPT-based LLM
-- **Motor Control**: Execute commands such as forward, backward, left, and right
-- **Obstacle Detection**: Use ultrasonic sensor to detect and avoid obstacles
-- **Web Interface**: Flask-based interface to monitor system status and command history
-
-### Services
-- **LLM API**: Natural language processing via OpenAI GPT-4
-- **Flask Server**: Local HTTP interface to monitor and control the system
-- **Voice Listener**: Record and process audio commands
-- **Motor Control Service**: Control motors via GPIO pins
+### Key Capabilities
+- Natural language understanding in Turkish
+- Real-time voice command processing
+- Autonomous navigation with obstacle avoidance
+- Voice feedback for executed actions
+- Web-based monitoring dashboard
+- Multi-threaded operation for concurrent processing
 
 ## Installation
 
-Steps to set up and run the project on Raspberry Pi:
+### Prerequisites
+- Raspberry Pi 5 with Raspberry Pi OS installed
+- Python 3.8 or higher
+- Active internet connection for cloud services
+- API keys for:
+  - OpenAI GPT-3.5
+  - Google Speech-to-Text
+  - ElevenLabs TTS
 
+### Hardware Setup
+1. Connect the MPU6050 sensor to the I2C pins on Raspberry Pi
+2. Wire the HC-SR04 ultrasonic sensor to GPIO pins
+3. Connect the L298N motor driver to the motors and Raspberry Pi
+4. Set up the UPS HAT with batteries for power
+5. Pair the Bluetooth speaker and configure the wireless microphone
+
+### Software Installation
 ```bash
-# Update system packages
-sudo apt update && sudo apt upgrade -y
+# Clone the repository
+git clone https://github.com/username/autonomous-mini-vehicle.git
+cd autonomous-mini-vehicle
 
-# Install required system dependencies
-sudo apt install python3-pip python3-dev libatlas-base-dev portaudio19-dev libasound-dev -y
-
-# Clone the project repository
-git clone https://github.com/username/project-name.git
-cd project-name
-
-# (Optional) Create a virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install Python dependencies
+# Install required Python packages
 pip install -r requirements.txt
+
+# Install system dependencies
+sudo apt-get update
+sudo apt-get install python3-flask python3-pip portaudio19-dev
+
+# Configure API keys
+cp .env.example .env
+# Edit .env file with your API keys
