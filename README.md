@@ -63,7 +63,8 @@ The vehicle processes voice commands through a sophisticated pipeline: capturing
 5. Pair the Bluetooth speaker and configure the wireless microphone
 
 ### Software Installation
-```bash
+```
+bash
 # Clone the repository
 git clone https://github.com/username/autonomous-mini-vehicle.git
 cd autonomous-mini-vehicle
@@ -87,6 +88,7 @@ python main.py
 
 # In a separate terminal, start the web interface
 python web_interface.py
+```
 Voice Commands Examples
 The vehicle understands natural Turkish commands such as:
 
