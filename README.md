@@ -143,9 +143,11 @@ TOBB University of Economics and Technology, Department of Electrical and Electr
 
 ### Special Thanks
 
-* Course Instructor for ELE495 Capstone Design Project
-* TOBB ETÜ for providing resources and facilities
-* Open-source community for various libraries and tools used
+* Coşku Kasnakoğlu, project advisor, for his continuous guidance and support
+* Zeki Kocabıyıkoğlu, course instructor of ELE495 Capstone Design Project
+* Murat Demirtaş and Murat Sever, for their valuable feedback and suggestions throughout the project
+* TOBB ETÜ, for providing the necessary resources, lab access, and facilities
+* Open-source community, for the libraries, frameworks, and tools that enabled the implementation of our system
 
 
 This project was completed as part of the ELE495 Capstone Design Course at TOBB University of Economics and Technology
