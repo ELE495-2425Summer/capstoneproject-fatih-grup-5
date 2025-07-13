@@ -63,8 +63,8 @@ The vehicle processes voice commands through a sophisticated pipeline: capturing
 5. Pair the Bluetooth speaker and configure the wireless microphone
 
 ### Software Installation
-bash
 ```
+# bash
 # Clone the repository
 git clone https://github.com/username/autonomous-mini-vehicle.git
 cd autonomous-mini-vehicle
@@ -76,18 +76,14 @@ pip install -r requirements.txt
 sudo apt-get update
 sudo apt-get install python3-flask python3-pip portaudio19-dev
 
-# Configure API keys
-cp .env.example .env
-# Edit .env file with your API keys
-Network Configuration
-For stable web interface access, consider setting up a static IP address on your Raspberry Pi.
-Usage
-Starting the System
-bash# Run the main control script
-python main.py
-
-# In a separate terminal, start the web interface
-python web_interface.py
+# Configure API keys in arayuz.py and pidandgyro.py
+# Network Configuration
+# For stable web interface access, consider setting up a static IP address on your Raspberry Pi.
+# Usage
+# Starting the System
+# bash
+# Run the main control script
+python arayuz.py
 ```
 ### Voice Commands Examples
 The vehicle understands natural Turkish commands such as:
