@@ -88,19 +88,19 @@ python arayuz.py
 ### Voice Commands Examples
 The vehicle understands natural Turkish commands such as:
 
-"İleri git" (Go forward)
-"Sağa dön" (Turn right)
-"Sola dön" (Turn left)
-"Dur" (Stop)
-"10 saniye ileri git" (Go forward for 10 seconds)
+* "İleri git" (Go forward)
+* "Sağa dön" (Turn right)
+* "Sola dön" (Turn left)
+* "Dur" (Stop)
+* "10 saniye ileri git" (Go forward for 10 seconds)
 
 ### Web Interface
 Access the monitoring dashboard at http://raspberrypi.local:5000 to view:
 
-Real-time command history
-JSON command parsing results
-System status and sensor readings
-Task execution logs
+* Real-time command history
+* JSON command parsing results
+* System status and sensor readings
+* Task execution logs
 
 ## Screenshots
 System Architecture
@@ -124,31 +124,28 @@ Task execution timeline
 ## Results
 The project successfully achieved all primary objectives:
 
-Voice Command Recognition: High accuracy in detecting and transcribing Turkish natural language commands
-AI-Powered Understanding: Both simple and complex sentences correctly interpreted and converted to JSON format
-Precise Movement Execution: Stable navigation with PID-controlled turning and gyroscope-assisted straight-line driving
-Real-time Feedback: Clear, synchronized Turkish voice responses for enhanced user experience
-System Stability: Reliable concurrent processing of audio, AI inference, and motor control
+* Voice Command Recognition: High accuracy in detecting and transcribing Turkish natural language commands
+* AI-Powered Understanding: Both simple and complex sentences correctly interpreted and converted to JSON format
+* Precise Movement Execution: Stable navigation with PID-controlled turning and gyroscope-assisted straight-line driving
+* Real-time Feedback: Clear, synchronized Turkish voice responses for enhanced user experience
+* System Stability: Reliable concurrent processing of audio, AI inference, and motor control
 
 ## Acknowledgements
 ### Team Members
 
-Ata Ölmez
-
-Arda Ayaş
-
-Cemal Atakan Bostancı
-
-Abdurrahman Can Karabulut
+* Ata Ölmez
+* Arda Ayaş
+* Cemal Atakan Bostancı
+* Abdurrahman Can Karabulut
 
 ### Institution
 TOBB University of Economics and Technology, Department of Electrical and Electronics Engineering, Ankara, Turkey
 
 ## References
 
-Breazeal, C. (2003). Toward sociable robots. Robotics and Autonomous Systems, 42(3–4), 167–175.
-Mavridis, N. (2015). A review of verbal and non-verbal human–robot interactive communication. Robotics and Autonomous Systems, 63, 22–35.
-Dexter Industries. Alexabot: Amazon Alexa controlled robot with Raspberry Pi. Hackster.io
+* Breazeal, C. (2003). Toward sociable robots. Robotics and Autonomous Systems, 42(3–4), 167–175.
+* Mavridis, N. (2015). A review of verbal and non-verbal human–robot interactive communication. Robotics and Autonomous Systems, 63, 22–35.
+* Dexter Industries. Alexabot: Amazon Alexa controlled robot with Raspberry Pi. Hackster.io
 
 ## Technical Resources
 
@@ -157,9 +154,9 @@ Dexter Industries. Alexabot: Amazon Alexa controlled robot with Raspberry Pi. Ha
 
 ### Special Thanks
 
-Course Instructor for ELE495 Capstone Design Project
-TOBB ETÜ for providing resources and facilities
-Open-source community for various libraries and tools used
+* Course Instructor for ELE495 Capstone Design Project
+* TOBB ETÜ for providing resources and facilities
+* Open-source community for various libraries and tools used
 
 
 This project was completed as part of the ELE495 Capstone Design Course at TOBB University of Economics and Technology
