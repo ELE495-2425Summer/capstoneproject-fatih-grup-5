@@ -4,9 +4,11 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Screenshots](#screenshots)
+- [Results](#results)
 - [Acknowledgements](#acknowledgements)
+- [References](#references)
+- [Technical Resources](#technical-resources)
 
 ## Introduction
 
