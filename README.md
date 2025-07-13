@@ -21,7 +21,7 @@ The vehicle processes voice commands through a sophisticated pipeline: capturing
 ### Hardware Components
 - **[Raspberry Pi 5 4GB](https://www.raspberrypi.com/products/raspberry-pi-5/)** - Main control unit running Python
 - **[Torima K9 Wireless Microphone](https://www.torima.com.tr/urun/k9-kablosuz-yaka-mikrofonu-mini-tasinabilir-mikrofon-typ-c)** - Voice input
-- **[JBL GO Bluetooth Speaker](https://www.jbl.com/portable-speakers/)** - Voice feedback system
+- **[JBL GO Bluetooth Speaker](https://www.mediamarkt.com.tr/tr/product/_jbl-go-essential-bluetooth-hoparlor-siyah-1228474.html)** - Voice feedback system
 - **[HC-SR04 Ultrasonic Sensor](https://www.sparkfun.com/products/15569)** - Obstacle detection and distance measurement
 - **[MPU6050 6-Axis Gyro & Accelerometer](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)** - Orientation sensing with PID-controlled turning
 - **[L298N Motor Driver](https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf)** - Bidirectional motor control
