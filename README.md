@@ -106,9 +106,9 @@ Access the monitoring dashboard at http://raspberrypi.local:5000 to view:
 
 ## Screenshots
 
-![FATIH Car](https://github.com/user-attachments/assets/7eb2e0f6-dc47-4c06-a220-f5fb4a7fd880)
+![FATIH Car](https://github.com/user-attachments/assets/7eb2e0f6-dc47-4c06-a220-f5fb4a7fd880 "FATIH Car")
 
-![Web Interface Dashboard](https://github.com/user-attachments/assets/62382659-6e62-47a3-a6f8-f3084b0bdf2d)
+![Web Interface Dashboard](https://github.com/user-attachments/assets/62382659-6e62-47a3-a6f8-f3084b0bdf2d "Web Interface Dashboard")
 
 ## Results
 The project successfully achieved all primary objectives:
