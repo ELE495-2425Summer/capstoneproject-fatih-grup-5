@@ -124,8 +124,8 @@ Command history log
 JSON parsing results
 Task execution timeline
 
-Note: The interface features a dark theme with green accent colors for better visibility
-Results
+
+## Results
 The project successfully achieved all primary objectives:
 
 Voice Command Recognition: High accuracy in detecting and transcribing Turkish natural language commands
@@ -138,8 +138,11 @@ System Stability: Reliable concurrent processing of audio, AI inference, and mot
 ### Team Members
 
 Ata Ölmez
+
 Arda Ayaş
+
 Cemal Atakan Bostancı
+
 Abdurrahman Can Karabulut
 
 ### Institution
@@ -154,9 +157,8 @@ Dexter Industries. Alexabot: Amazon Alexa controlled robot with Raspberry Pi. Ha
 
 ## Technical Resources
 
-Waveshare UPS HAT Documentation - Power management system setup
-SpeechBrain Speaker Recognition Model - Advanced speech processing reference
-Raspberry Pi Static IP Configuration - Network setup guide
+- [Waveshare UPS HAT Documentation](https://www.waveshare.com/wiki/UPS_HAT)
+- [SpeechBrain Speaker Recognition Model](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb)
 
 ### Special Thanks
 
