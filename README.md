@@ -119,6 +119,8 @@ The project successfully achieved all primary objectives:
 * Real-time Feedback: Clear, synchronized Turkish voice responses for enhanced user experience
 * System Stability: Reliable concurrent processing of audio, AI inference, and motor control
 
+Youtube link: https://youtube.com/shorts/fBXB9qzK4w4
+
 ## Acknowledgements
 Mentor: Coşku Kasnakoğlu
 ### Team Members
