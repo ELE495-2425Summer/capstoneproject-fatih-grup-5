@@ -1,4 +1,4 @@
-# Natural Language Controlled Autonomous Mini Vehicle
+# Turkish Natural Language Controlled Autonomous Mini Vehicle
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -142,9 +142,8 @@ Cemal Atakan Bostancı
 Abdurrahman Can Karabulut
 
 ### Institution
-TOBB University of Economics and Technology
-Department of Electrical and Electronics Engineering
-Ankara, Turkey
+TOBB University of Economics and Technology, Department of Electrical and Electronics Engineering, Ankara, Turkey
+
 ## References
 
 Breazeal, C. (2003). Toward sociable robots. Robotics and Autonomous Systems, 42(3–4), 167–175.
