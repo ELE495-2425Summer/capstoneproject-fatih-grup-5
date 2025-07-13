@@ -101,7 +101,7 @@ Access the monitoring dashboard at http://raspberrypi.local:5000 to view:
 
 * Real-time command history
 * JSON command parsing results
-* System status and sensor readings
+* Battery status
 * Task execution logs
 
 ## Screenshots
