@@ -96,7 +96,7 @@ The vehicle understands natural Turkish commands such as:
 "Sağa dön" (Turn right)
 "Sola dön" (Turn left)
 "Dur" (Stop)
-"10 santimetre ileri git" (Go forward 10 centimeters)
+"10 saniye ileri git" (Go forward for 10 seconds)
 
 ### Web Interface
 Access the monitoring dashboard at http://raspberrypi.local:5000 to view:
