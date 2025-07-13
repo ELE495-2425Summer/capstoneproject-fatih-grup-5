@@ -18,12 +18,12 @@ The vehicle processes voice commands through a sophisticated pipeline: capturing
 
 ### Hardware Components
 - **[Raspberry Pi 5 4GB](https://www.raspberrypi.com/products/raspberry-pi-5/)** - Main control unit running Python
-- **Torima K9 Wireless Microphone** - Turkish voice command detection
+- **[Torima K9 Wireless Microphone](https://www.torima.com.tr/urun/k9-kablosuz-yaka-mikrofonu-mini-tasinabilir-mikrofon-typ-c)** - Turkish voice command detection
 - **[JBL GO Bluetooth Speaker](https://www.jbl.com/portable-speakers/)** - Voice feedback system
 - **[HC-SR04 Ultrasonic Sensor](https://www.sparkfun.com/products/15569)** - Obstacle detection and distance measurement
 - **[MPU6050 6-Axis Gyro & Accelerometer](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)** - Orientation sensing with PID-controlled turning
 - **[L298N Motor Driver](https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf)** - Bidirectional motor control
-- **DC Motors and Chassis** - Vehicle mobility system
+- **[DC Motors and Chassis](https://www.direnc.net/2wd-robot-araba-kit-2wd-smart-car)** - Vehicle mobility system
 - **[UPS HAT with 2x 18650 Batteries](https://www.waveshare.com/wiki/UPS_HAT)** - Uninterrupted power supply
 
 ### Software & Services
@@ -63,8 +63,8 @@ The vehicle processes voice commands through a sophisticated pipeline: capturing
 5. Pair the Bluetooth speaker and configure the wireless microphone
 
 ### Software Installation
-```
 bash
+```
 # Clone the repository
 git clone https://github.com/username/autonomous-mini-vehicle.git
 cd autonomous-mini-vehicle
@@ -89,7 +89,7 @@ python main.py
 # In a separate terminal, start the web interface
 python web_interface.py
 ```
-Voice Commands Examples
+### Voice Commands Examples
 The vehicle understands natural Turkish commands such as:
 
 "İleri git" (Go forward)
@@ -98,7 +98,7 @@ The vehicle understands natural Turkish commands such as:
 "Dur" (Stop)
 "10 santimetre ileri git" (Go forward 10 centimeters)
 
-Web Interface
+### Web Interface
 Access the monitoring dashboard at http://raspberrypi.local:5000 to view:
 
 Real-time command history
@@ -106,7 +106,7 @@ JSON command parsing results
 System status and sensor readings
 Task execution logs
 
-Screenshots
+## Screenshots
 System Architecture
 The project follows a sophisticated flow diagram where voice input is processed through multiple stages:
 
@@ -134,31 +134,31 @@ Precise Movement Execution: Stable navigation with PID-controlled turning and gy
 Real-time Feedback: Clear, synchronized Turkish voice responses for enhanced user experience
 System Stability: Reliable concurrent processing of audio, AI inference, and motor control
 
-Acknowledgements
-Team Members
+## Acknowledgements
+### Team Members
 
 Ata Ölmez
 Arda Ayaş
 Cemal Atakan Bostancı
 Abdurrahman Can Karabulut
 
-Institution
+### Institution
 TOBB University of Economics and Technology
 Department of Electrical and Electronics Engineering
 Ankara, Turkey
-References
+## References
 
 Breazeal, C. (2003). Toward sociable robots. Robotics and Autonomous Systems, 42(3–4), 167–175.
 Mavridis, N. (2015). A review of verbal and non-verbal human–robot interactive communication. Robotics and Autonomous Systems, 63, 22–35.
 Dexter Industries. Alexabot: Amazon Alexa controlled robot with Raspberry Pi. Hackster.io
 
-Technical Resources
+## Technical Resources
 
 Waveshare UPS HAT Documentation - Power management system setup
 SpeechBrain Speaker Recognition Model - Advanced speech processing reference
 Raspberry Pi Static IP Configuration - Network setup guide
 
-Special Thanks
+### Special Thanks
 
 Course Instructor for ELE495 Capstone Design Project
 TOBB ETÜ for providing resources and facilities
