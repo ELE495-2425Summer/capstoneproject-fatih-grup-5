@@ -15,6 +15,7 @@
 This capstone project (ELE495) presents an autonomous mini vehicle that can understand and execute Turkish natural language voice commands. The system integrates cutting-edge AI technologies with robotics to create an intelligent vehicle capable of interpreting conversational commands and translating them into precise movements. By combining Speech-to-Text, Large Language Models, and Text-to-Speech technologies with sensor-based navigation, the project demonstrates a multidisciplinary approach to human-robot interaction.
 
 The vehicle processes voice commands through a sophisticated pipeline: capturing audio, converting speech to text, understanding intent using AI, executing movements safely with sensor feedback, and providing voice confirmations—all in real-time.
+![WhatsApp Görsel 2025-07-10 saat 22 36 43_6f014f00](https://github.com/user-attachments/assets/68d769d1-6036-47f2-b83f-a96229ebfbe2)
 
 ## Features
 
