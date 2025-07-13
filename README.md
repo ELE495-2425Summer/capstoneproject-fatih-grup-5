@@ -120,7 +120,7 @@ The project successfully achieved all primary objectives:
 * System Stability: Reliable concurrent processing of audio, AI inference, and motor control
 
 ## Acknowledgements
-Mentor: Murat Sever
+Mentor: Coşku Kasnakoğlu
 ### Team Members
 
 * Ata Ölmez
